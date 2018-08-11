@@ -1,1 +1,17 @@
 /* Empty. Add your own CSS if you like */
+#in{
+    margin: 30px;
+    text-align: center;
+}
+input
+{
+    
+    border-bottom: 1px solid grey;
+}
+a{
+    color: black;
+}
+#anc
+{
+    color: blue;
+}

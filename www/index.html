@@ -33,13 +33,49 @@
     <script src="js/app.js"></script>
   </head>
   <body ng-app="starter">
-
+    <div ng-controller="fb">
+<form name="myForm">
     <ion-pane>
-      <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
-      </ion-header-bar>
       <ion-content>
+      <div style="text-align: center;">
+        <img src="img/fb_pic.png"/ style="width: 100%; height: 100%">
+      </div>
+      
+        <div class="list" style="text-align: center;">
+          <a href="#">اردو</a>
+          <a href="#">.&nbsp;Español&nbsp;.</a>
+          <a href="#" id="anc">More...</a>
+        </div>
+       <br/>
+        <div class="list" id="in">
+        
+          <label class=" item-input">
+            <input type="text" placeholder="Phone or Email" ng-model="myForm.mail" style="border-bottom: 1px solid grey;">
+          </label>
+        
+        <label class=" item-input">
+            <input type="password" placeholder="Password" ng-model="myForm.password" style="border-bottom: 1px solid grey;">
+        </label>
+
+
+            <button ng-click="login()" class="button button-block " style="background-color:#3c619e; color: white; ">LOG IN</button>
+            
+            <a ng-click="anc()" style="text-align: center; color:#3c619e;"><b>FORGOT PASSWORD?</b></a>
+            <p style="text-align:center;">
+                <br/>
+                <hr style="float: left; width:45%;">OR<hr style="float: right; width:47%">
+            </p>
+            <br/>
+              <button ng-click="newAccount()" class="button button-positive" style="background-color:#21aa19; color: white;">CREATE NEW FACEBOOK ACCOUNT</button>
+            <br/>
+        
+        </div>
+      
+
+      
       </ion-content>
     </ion-pane>
+</form>
+    </div>
   </body>
 </html>

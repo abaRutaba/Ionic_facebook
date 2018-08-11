@@ -24,3 +24,23 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('fb',function($scope)
+{
+  console.log("facebook")
+  
+  $scope.login=function()
+  {
+      console.log("Login Button CLicked!");
+      console.log("Email = "+$scope.myForm.mail+" and Password = "+$scope.myForm.password);
+
+  }
+  $scope.newAccount=function()
+  {
+    console.log("Create New Account button CLicked!");
+  }
+  $scope.anc=function()
+  {
+    console.log("Forgot Password anchor Clicked!")
+  }
+})
